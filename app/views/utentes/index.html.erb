@@ -1,0 +1,20 @@
+<h1>All Utentes</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <!-- Add more columns as needed -->
+  </tr>
+  </thead>
+  <tbody>
+  <% @utentes.each do |utente| %>
+    <tr>
+      <td><%= utente.username %></td>
+      <td><%= utente.nome %></td>
+      <!-- Add more fields as needed -->
+    </tr>
+  <% end %>
+  </tbody>
+</table>

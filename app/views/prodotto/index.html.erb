@@ -1,0 +1,21 @@
+
+<h1>prodotti</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>prodotto</th>
+    <th>descrizione</th>
+    <!-- Add more columns as needed -->
+  </tr>
+  </thead>
+  <tbody>
+  <% @prodotti.each do |prodotto| %>
+    <tr>
+      <td><%= prodotto.descrizione %></td>
+      <td><%= prodotto.nome_oggetto %></td>
+      <!-- Add more fields as needed -->
+    </tr>
+  <% end %>
+  </tbody>
+</table>
